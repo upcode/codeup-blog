@@ -82,7 +82,14 @@ def contact():
 
 ################################################################################
 if __name__ == "__main__":
+
+    PORT = int(os.environ.get("PORT", 5000))
+    DEBUG = "NO_DEBUG" not in os.environ
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
     else:
-        app.run(host='0.0.0.0', debug=True)
+         app.run(debug=DEBUG, host="0.0.0.0", port=PORT)
+
+    
+   
+
