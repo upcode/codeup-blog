@@ -1,58 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>UPCODE BLOG</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Description" lang="en" content="Programming">
-        <meta name="Uma Petersen" content="upcode.com">
-        <meta name="robots" content="index, follow">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-        <!-- Custom Fonts -->
-        <!-- icons -->
-        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico">
-
-        <!-- Override CSS file - add your own CSS rules -->
-        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Cuprum|Rokkitt|Libre+Baskerville|Old+Standard+TT' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../static/css/base.css" />
-        <link rel="stylesheet" href="../static/css/blog.css" />
-        <link rel="stylesheet" href="../static/css/links.css" />
-
-
-    </head>
-
-    <body>
+{% extends "base.html" %}
+     
 
 
 
-        <div class="nav-bar">
-            <div class="container">
-                <ul class="nav">
-                    <li><a href="/posts">Home</a></li>
-                    <li><a href="/articles">Articles</a></li>
-                    <li><a href="/umapetersen">UP[C0DE]</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-<hr>
+       {% block content %}
 
-
-        <div class="header2">
-            <div class="headerimage">
-                <!-- Heading levels -->
-                 <center><h1>[C0DE]UP<b>&#8593;</b> ... BlOG</h1></center>
-                          </div><!-- // end headerimage-->
-        </div><!-- // end header-->
-<hr>
 
 
     <div class="content">
@@ -169,42 +121,7 @@
         </div><!-- // end container -->
     </div><!-- // content -->
 
-<hr>
 
-    <div class="footer">
-            <div class="row">
+{% endblock %}
 
-            <div id="footer-icons">
-                <a href="#">
-                    <span class="fa-stack fa-sm">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-
-
-                <a href="#">
-                    <span class="fa-stack fa-sm">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-
-
-                <a href="#">
-                    <span class="fa-stack fa-sm">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                </div>
-                <div class="copy">
-                    <small class="copyright text-muted">Copyright &copy; UP[CODE] 2015</small>
-                </div>
-        </div><!-- // end row -->
-    </div><!-- // end footer-->
-
-    </body>
-</html>
-
-</html>
+    

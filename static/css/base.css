@@ -19,6 +19,16 @@ h4 { font-size: 18px; }
 h5 { font-size: 16px; }
 h6 { font-size: 14px; }
 
+a,
+a:hover,/*The user mouses over a link.*/
+a:focus, /*The user clicks on a link.*/
+a:active, /*The user has clicked a link*/
+a.active 
+a:visited{ /*Visited links.*/
+font-weight: bold;
+/* font-family: 'Playfair Display', serif;
+*/}
+
 
 /* -----------------------
 Layout styles
@@ -58,6 +68,7 @@ color:black; }
 
 .footer
 {
+    padding-top: 10px;
     padding-left: 50px;
     margin-left: 200px;
 }
@@ -97,8 +108,8 @@ Single styles
 
 #copy {
 
-padding-left: 1000px;
-
+    margin-left: 500px;
+    padding-left: 50px;
 }
 .img-responsive { max-width: 100%;
 
@@ -214,7 +225,7 @@ border: 1px solid;
     padding-bottom: 25px;
 }
 
-.empty {
+
 
 
 

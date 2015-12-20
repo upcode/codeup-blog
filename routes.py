@@ -53,16 +53,16 @@ def articles():
 
     """articles page"""
 
-    return render_template('links.html')
+    return render_template('articles.html')
 ################################################################################
 
-@app.route("/upcode")
+@app.route("/about-upcode")
 def upcode():
 
     """articles page"""
 
-    return render_template('upcode.html')
-    
+    return render_template('about-upcode.html')
+
 ################################################################################
 
 @app.route("/contact")

@@ -6,6 +6,11 @@ ul, nav {
     display: block;
 }
 
+.social-about{
+	padding-top: 10px;
+}
+
+
 body {
 color: #545454;
 /*font-family: 'Lato', sans-serif;

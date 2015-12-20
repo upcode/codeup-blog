@@ -18,16 +18,20 @@
         <!-- Custom Fonts -->
         <!-- icons -->
         <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="../static/img/logo.ico">
 
         <!-- Override CSS file - add your own CSS rules -->
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Cuprum|Rokkitt|Libre+Baskerville|Old+Standard+TT' rel='stylesheet' type='text/css'>        
-        <link rel="stylesheet" href="../static/css/base2.css" />
-        <link rel="stylesheet" href="../static/css/blog.css" />
-        <link rel="stylesheet" href="../static/css/links.css" />
-        <link rel="stylesheet" href="../static/css/post.css" />
-        <link rel="stylesheet" href="../static/css/base.css" />
-        <link rel="stylesheet" href="../static/css/posts.css" />
+        <link rel="stylesheet" href="/static/css/blog.css" />
+        <link rel="stylesheet" href="/static/css/links.css" />
+        <link rel="stylesheet" href="/static/css/base.css" />
+        <link rel="stylesheet" href="/static/css/posts.css" />
+        <link rel="stylesheet" href="/static/css/post.css" />
+        <link rel="stylesheet" href="/static/css/contact.css" />
+
+
+        <link href="/static/css/ihover.css" rel="stylesheet">
+
 
 
 
@@ -52,9 +56,9 @@
         <div class="nav-bar">
             <div class="container-fluid">
                 <ul class="nav">
-                    <li><a href="/posts">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/articles">Articles</a></li>
-                    <li><a href="/upcode">About</a></li>
+                    <li><a href="/about-upcode">The Blogger</a></li>
                     <li><a href="http://www.umapetersen.com">UP[C0DE]</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
@@ -74,7 +78,8 @@
             <div class="headerimage">
                 <!-- Heading levels -->
                 <center><h1>[C0DE]UP<b>&#8593;</b> ... BLOG</h1></center>
-                <center><img class="img-responsive" src="/static/img/coffee.jpg" height="370" width="600" id="headeriamge" alt=""></center>
+                <center>
+                    <img class="img-responsive" src="/static/img/header.png" height="370" width="600" id="headeriamge" alt=""></center>
             </div><!-- // end headerimage-->
             {% endblock %}
         </div><!-- // end header-->
@@ -82,36 +87,45 @@
 
 <hr class="hrline">
 
-    <div class="footer">
-        {% block footer %}
-        <div class="container">
-                <div>CODE[UP]  &copy; Copyright 2015</div>
-                    <div id="footer-icons">
-                        <a href="http://twitter.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
+
+<div class="footer">
+     {% block footer %}
+            <div class="row">
+
+            <div id="footer-icons">
+                <a href="https://twitter.com/Octothorpe12">
+                    <span class="fa-stack fa-sm">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
 
 
-                        <a href="http://linkdin.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
+                <a href="https://www.linkedin.com/in/umapetersen">
+                    <span class="fa-stack fa-sm">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
 
 
-                        <a href="http://github.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </div>
-            </div>
-        {% endblock %}
-    </div>
+                <a href="https://github.com/upcode">
+                    <span class="fa-stack fa-sm">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+
+                </div>
+                <div id="copy">
+                    <small class="copyright text-muted">Copyright &copy; UP[CODE] 2015</small>
+                </div>
+        </div><!-- // end row -->
+         {% endblock %}
+        </div><!-- // end footer-->
+
+
+
+
 </body>
 </html>
