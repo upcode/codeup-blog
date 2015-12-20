@@ -1,0 +1,340 @@
+ body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+/*    font: 1em/1.2 "Oswald", serif;
+*/    /*color: #565051;*/
+    }
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 .5em;
+    font-weight: 500;
+    line-height: 1.1;
+    }
+
+h1 { font-size: 36px;
+font-family: 'Oswald', sans-serif;
+font-weight: 500px;
+ } /* 36px */
+
+
+h2 { font-size: 28px;
+font-family: 'Cuprum', sans-serif;
+
+ } /* 28px */
+
+
+h3 { font-size: 22px; } /* 22px */
+h4 { font-size: 18px; } /* 18px */
+h5 { font-size: 16px; } /* 16px */
+h6 { font-size: 14px; } /* 14px */
+
+p
+{
+    margin: 0 0 1.5em;
+    line-height: 1.5;
+    font-family: 'Old Standard TT', serif;
+
+}
+small {
+    font-family: 'Old Standard TT', serif;
+
+
+}
+
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Cuprum', sans-serif;
+font-family: 'Old Standard TT', serif;*/
+
+hr
+{
+    height: 0;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    border: 0;
+    border-top: 1px solid #ddd;
+
+}
+
+.hrline
+{
+    height: 0;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    position: center;
+    width: 1080px;
+}
+
+
+a:link { color: royalblue; }
+a:visited { color: purple; }
+a:focus { color: black; }
+a:hover { color: green; }
+a:active { color: red; }
+
+/* -----------------------
+Layout styles
+------------------------*/
+
+.container
+{
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.header
+{
+    color: black;
+    position: center;
+    background: white;
+/*    padding: 1em 1.25em;
+*/
+
+}
+
+.header-heading { margin: 0;
+color:black; }
+
+.nav-bar
+{
+    background: white;
+    padding: 0;
+    text-align: center;
+    margin: 0px;
+}
+
+.content
+{
+    overflow: hidden;
+    padding: 1em 1.25em;
+    background-color: white;
+}
+
+.main, .aside
+{
+    margin-bottom: 1em;
+}
+
+.footer
+{
+    color: black;
+    background: white;
+    padding: 1em 1.25em;
+}
+
+/* -----------------------
+Nav
+------------------------*/
+
+.nav
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li
+{
+    display: inline;
+    margin: 0;
+}
+
+.nav a
+{
+    display: block;
+/*    padding: .7em 1.25em;
+*/
+    text-decoration: none;
+    border-bottom: 1px solid #565051;
+    color: #565051
+}
+
+.nav a:link { color: black; }
+.nav a:visited { color: black; }
+
+.nav a:focus
+{
+    color: black;
+    background-color: white;
+}
+
+.nav a:hover
+{
+    color: white;
+    background-color: gray;
+}
+
+.nav a:active
+{
+    color: white;
+    background-color: yellow;
+}
+
+/* -----------------------
+Single styles
+------------------------*/
+#footer-icons {
+
+       text-align:left;
+       padding-right: 350px;
+       padding-top: 20px;
+
+}
+
+
+#copy {
+
+padding-left: 500px;
+padding-right: 00px;
+
+}
+.img-responsive { max-width: 100%;
+
+}
+.btn
+{
+    color: #fff !important;
+    background-color: gray;
+    border-color: #222;
+    display: inline-block;
+    padding: .5em 1em;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: .2em;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    color: #ddd !important;
+/*    background-color: green;
+*/    background-color:  #fff;
+
+
+}
+
+.btn:focus
+{
+    color: #fff !important;
+    background-color: black;
+}
+
+.btn:active
+{
+    color: #fff !important;
+    background-color: red;
+}
+
+
+.list-unstyled
+{
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline
+{
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.list-inline > li
+{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 55em)
+{
+    .header { padding: 1.5em 3em; }
+    .nav-bar { padding: 1em 3em; }
+    .content { padding: 2em 3em; }
+
+    .main
+    {
+        float: left;
+        width: 65%;
+        margin-right: 5%;
+        margin-bottom: 1em;
+    }
+
+    .aside
+    {
+        float: left;
+        width: 30%;
+        margin-bottom: 1em;
+    }
+
+    .footer { padding: 2em 3em; }
+
+    .nav li
+    {
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+
+    .nav a
+    {
+        display: inline;
+        padding: 0;
+        border-bottom: 0;
+    }
+}
+ /*  ######################  IMAGE HOVER  ##################### */
+/* header and self image change from color to black and white*/
+.main {
+    padding-bottom: 30px;
+}
+
+
+img:hover {
+border: 1px solid;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+
+}
+
+.footer {
+    padding-bottom: 50px;
+}
+
+.empty {
+    padding-bottom: 50px;
+
+}
+
+.about-me{
+    position: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 2px;
+}
+
+.header{
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+.header-heading{
+    padding-bottom: 25px;
+/*    padding-top: 25px;
+*/}

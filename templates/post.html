@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+
+
+
+
+{% block content %}
+
+
+<hr class="hrline">
+
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="blog-title">
+                            <img src="/static/img/code.png" height="100" width="100" id="code">
+                            <h3 id="post-title">{{ post.title }}
+                            <small>{{ post.name }} {{ post.date }}</small></h3>
+                            <p>{{ post.html|safe }}</p>
+
+                        </div>
+
+
+                    </div><!-- // end col-6 -->
+
+                </div><!-- // end row-->
+
+
+
+
+             </div><!-- // end main-->
+        </div><!-- // end container -->
+
+{% endblock %}
+
+
+

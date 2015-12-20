@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="/static/css/upcode.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UPCODE BLOG</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" lang="en" content="Programming Blog">
+        <meta name="Uma Petersen" content="upcode.com">
+        <meta name="robots" content="index, follow">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+        <!-- Custom Fonts -->
+        <!-- icons -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!-- Override CSS file - add your own CSS rules -->
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Cuprum|Rokkitt|Libre+Baskerville|Old+Standard+TT' rel='stylesheet' type='text/css'>        
+        <link rel="stylesheet" href="../static/css/base2.css" />
+        <link rel="stylesheet" href="../static/css/blog.css" />
+        <link rel="stylesheet" href="../static/css/links.css" />
+        <link rel="stylesheet" href="../static/css/post.css" />
+        <link rel="stylesheet" href="../static/css/base.css" />
+        <link rel="stylesheet" href="../static/css/posts.css" />
+
+
+
+    <title>{% block title %}UP[CODE].....BLOG{% endblock %}</title>
+
+
+ {% endblock %}
+   
+</head>
+<body>
+
+
+<div class="header">
+    {% block header %}
+        <div class="header">
+            <div class="container-fluid">
+                <h5 class="header-heading"></h5>
+            </div>
+        </div>
+
+
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <ul class="nav">
+                    <li><a href="/posts">Home</a></li>
+                    <li><a href="/articles">Articles</a></li>
+                    <li><a href="/upcode">About</a></li>
+                    <li><a href="http://www.umapetersen.com">UP[C0DE]</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        {% endblock %}
+        </div>
+
+
+<hr class="hrline">
+
+    <div id="header">
+        {% block content %}
+
+
+        <div class="header">
+            <div class="headerimage">
+                <!-- Heading levels -->
+                <center><h1>[C0DE]UP<b>&#8593;</b> ... BLOG</h1></center>
+                <center><img class="img-responsive" src="/static/img/coffee.jpg" height="370" width="600" id="headeriamge" alt=""></center>
+            </div><!-- // end headerimage-->
+            {% endblock %}
+        </div><!-- // end header-->
+
+
+<hr class="hrline">
+
+    <div class="footer">
+        {% block footer %}
+        <div class="container">
+                <div>CODE[UP]  &copy; Copyright 2015</div>
+                    <div id="footer-icons">
+                        <a href="http://twitter.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+
+                        <a href="http://linkdin.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+
+                        <a href="http://github.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+            </div>
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+
+    }
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 .5em;
+    font-weight: 500;
+    line-height: 1.1;
+    }
+
+
+
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+
+/* -----------------------
+Layout styles
+------------------------*/
+
+.container
+{
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+
+}
+
+.header-heading { margin: 0;
+color:black; }
+
+.nav-bar
+{
+    background: white;
+    padding: 0;
+    text-align: center;
+    margin: 0px;
+}
+
+.content
+{
+    overflow: hidden;
+    padding: 1px 1.25px;
+    background-color: white;
+}
+
+.main, .aside
+{
+    margin-bottom: 1px;
+}
+
+.footer
+{
+    padding-left: 50px;
+    margin-left: 200px;
+}
+
+/* -----------------------
+Nav
+------------------------*/
+
+.nav
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li
+{
+    display: inline;
+    margin: 0;
+}
+
+.nav a
+{
+    display: block;
+    padding: .7em 1.25em;
+
+    text-decoration: none;
+    border-bottom: 1px solid #565051;
+    color: #565051
+}
+
+
+
+/* -----------------------
+Single styles
+------------------------*/
+
+#copy {
+
+padding-left: 1000px;
+
+}
+.img-responsive { max-width: 100%;
+
+}
+.btn
+{
+    color: #fff !important;
+    background-color: #4fb8a6;
+    border-color: #222;
+    font-family: "Source Sans Pro","Helvetica Neue",sans-serif;
+    display: inline-block;
+    padding: .5em 1em;
+    margin-bottom: 0;
+    font-weight: 200;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: .2em;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+color: #ddd !important;
+background-color:  #4fb8a6;
+
+
+}
+
+
+
+
+.list-unstyled
+{
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline
+{
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.list-inline > li
+{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 55em)
+{
+    .header { padding: 1.5em 3em; }
+    .nav-bar { padding: 1em 3em; }
+    .content { padding: 2em 3em; }
+
+    .main
+    {
+        float: left;
+        width: 65%;
+        margin-right: 5%;
+        margin-bottom: 1em;
+        padding-left: 30px;
+    }
+
+    .aside
+    {
+        float: left;
+        width: 30%;
+        margin-bottom: 1em;
+    }
+
+    /*.footer { padding: 2px 3px; }*/
+
+    .nav li
+    {
+        display: inline;
+        margin: 0 3em 0 0;
+    }
+
+    .nav a
+    {
+        display: inline;
+        padding: 0;
+        border-bottom: 0;
+    }
+}
+ /*  ######################  IMAGE HOVER  ##################### */
+/* header and self image change from color to black and white*/
+.main {
+    padding-bottom: 30px;
+}
+
+
+img:hover {
+border: 1px solid;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+
+}
+
+.footer {
+    padding-bottom: 25px;
+}
+
+.empty {
+
+
+
+.header {
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+.header-heading{
+    padding-bottom: 25px;
+/*    padding-top: 25px;
+*/}
