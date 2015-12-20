@@ -1,3 +1,4 @@
+import os
 import sys
 from flask import Flask, render_template
 from flask_flatpages import FlatPages, pygments_style_defs
@@ -12,6 +13,8 @@ FLATPAGES_ROOT = 'content'
 POST_DIR = 'posts'
 ################################################################################
 app = Flask(__name__)
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", "Rain")
+
 flatpages = FlatPages(app)
 freezer = Freezer(app)
 app.config.from_object(__name__)
@@ -22,7 +25,9 @@ app.config.from_object(__name__)
                         ## BLOG ROUTES ##
 ################################################################################
 
-
+@app.route("/error")
+def error():
+    raise Exception("Error!")
    
 
 ################################################################################
