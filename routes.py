@@ -31,6 +31,7 @@ def error():
    
 
 ################################################################################
+
 @app.route("/")
 def posts():
     """sort blog list posts by date"""
@@ -38,6 +39,8 @@ def posts():
     posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
     # posts.sort(key=lambda item:item['date'], reverse=False)
     return render_template('posts.html', posts=posts)
+
+
 
 ################################################################################
 
@@ -61,12 +64,12 @@ def articles():
     return render_template('articles.html')
 ################################################################################
 
-@app.route("/about-upcode")
+@app.route("/about")
 def upcode():
 
     """articles page"""
 
-    return render_template('about-upcode.html')
+    return render_template('about.html')
 
 ################################################################################
 
@@ -78,8 +81,8 @@ def contact():
     return render_template('contact.html')
 
 
-################################################################################
 
+################################################################################
 
 
 ################################################################################

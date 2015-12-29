@@ -1,7 +1,8 @@
-topic: UP[code]
-title: The code that changed my career
-name: Posted by - UP[CODE]
+title: Programming
+subtitle: The code that changed my career
+name: Uma Petersen
 date: 2015-12-5
+
 summary: Into the world of a software engineer.  I often wondered what it took to become a software engineer.  How could I know if it was the right career for me?  I discovered a lot of misconceptions about a career in software development.  And then I charged ahead.  Here is my journey into software engineering  ~ and the  code that changed my career.
 
 

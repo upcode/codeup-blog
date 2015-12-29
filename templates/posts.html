@@ -1,130 +1,44 @@
-
 {% extends "base.html" %}
+<!-- Main Content -->
 
-
-
+<!-- First Blog Post -->
+         
 
 {% block content %}
-    <div class="content">
-        <div class="container">
-            <div class="main">
+    <div class="container">
 
-                <h2 id="wk-title">Weekly Posts</h2>
-                {% for post in posts %}
-                <!-- Paragraphs -->
-                <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
-                <h3 class="post-title">{{ post.topic }}: {{ post.title }}</h3></a>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    {% for post in posts %}
+                    <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+                    <h2 class="post-title">{{ post.title }}</h2>
+                        <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                    </a>
+                    <p class="post-meta">Posted by<a href="/about"> {{ post.name }}</a></p>
+                    <p><span class="glyphicon glyphicon-time"></span>{{ post.date }}</p>
+                    <img class="img-responsive" src="/static/img/code.png" height="150" width="150" alt=""/>
 
-                <p class="post-description">{{ post.summary }}</p>
-
-                <small><p class="post-meta">{{ post.name }}</small> <span></span><small>{{ post.date }}</small></p>
-                {% endfor %}
-            </div><!-- // end main-->
-        </div><!-- // end container -->
-
-
-
-                <div class="aside">
-                    <div class="nerd-div">
-                    <h3 class="nerdlife">Nerd~Life</h3>
-
-                    <ul class="list-inline">
-                        <a href="/articles"><li>Python</li></a>
-                        <a href="/articles"><li>Javascript</li></a>
-                        <a href="/articles"><li>HTML5</li></a>
-                        <a href="/articles"><li>CSS3 & Design</li></a>
-                        <a href="/articles"><li>UP[C0DE]</li></a>
-                        <a href="/articles"><li>[C0DE] 30</li></a>
-                    </ul>
-                    </div>
-
-                <hr class="hr2">
-
-                    <div class="logo">
-                        <center>
-                              <h2><strong>UP</strong>&#8593;[CODE]</h2>
-                        </center>
-                    </div><!-- // end logo-->
-
-                <hr class="hr2">
-<center>
-                    <div class="about-me">
-   <div class="ih-item circle effect19" id="circle-effect"><a id="circle" href="/upcode">
-                    <div class="img" id="circle-img">
-                        
-                        <img src="../static/img/logo.png" class="image-responsive" id="img-header" alt="img"></div>
-                 
-                        <div class="info">
-                            <h4>Welcome...Visitors</h4>
-                                
-                        </div></a></div>
- </center>
-                        <!-- <center>
-                            <img class="image-responsive" src="/static/img/logo.png" style="max-width:95%;border:1px double #545565;" id="me" width="171" height="180" alt="..." class="img-thumbnail">
-                            <h3>Uma Petersen</h3>
-                             <small>Imagination . Creatvity . Design + Logic = UP[C0DE]</small>
-                        </center>
- -->
-
-
-
-                            <small>
-                                <div class="text">
-                                If you are interested in software development and want to discover the possibilities of what you might become, this blog is for you. If you want to know a little bit more about me, you can check out my personal page here</small><small><a href="http://www.umapetersen.com">UP[code]</a></small>
-                                </div>
-
-                            </div><!-- // end about blog section-->
-
-
-                        <div class="social">
-                        <center>
-                        <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-primary" role="button">Linkdin</a>
-                        <a href="https://github.com/upcode" class="btn btn-primary" role="button">GitHub</a>
-                        <a href="https://twitter.com/Octothorpe12" class="btn btn-primary" role="button">Twitter</a>
-                        </center>
-                    </div><!-- // end social -->
-
+                    <p class="post-description">{{ post.summary }}</p>
+                <a class="btn btn-primary" href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <hr>
+                 {% endfor %}
                 </div>
-
-{% endblock %}
-
-
-            </div><!-- // end aside -->
-            </div><!-- // end blog content -->
-<hr>
-
-        <div class="footer">
-            <div class="row">
-
-            <div id="footer-icons">
-                <a href="https://twitter.com/Octothorpe12">
-                    <span class="fa-stack fa-sm">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        {% endblock %}
 
 
-                <a href="https://www.linkedin.com/in/umapetersen">
-                    <span class="fa-stack fa-sm">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
 
 
-                <a href="https://github.com/upcode">
-                    <span class="fa-stack fa-sm">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
 
-                </div>
-                <div id="copy">
-                    <small class="copyright text-muted">Copyright &copy; UP[CODE] 2015</small>
-                </div>
-            </div><!-- // end row -->
-        </div><!-- // end footer-->
-
-   
+     
+ 

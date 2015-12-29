@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    {% block head %}
-   
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="Uma Petersen" content="Programming Blog">
+    <meta name="author" content="">
 
-    <title>UPCODE BLOG</title>
+    <title>Uma Petersen Blog</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="../static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
 
 
     <!-- Custom CSS -->
-    <link href="../static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
-    <link href="../static/css/base.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
 
-    
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -35,14 +32,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>{% block title %}UP[CODE].....BLOG{% endblock %}</title>
-   
-   
 </head>
- {% endblock %}
+
 <body>
 
- <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,29 +47,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">UP[CODE]</a>
+                <a class="navbar-brand" href="index.html">[CODE]UP</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/index">Home</a>
+                        <a href="/index.html">Home</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a href="/about.html">About</a>
                     </li>
                     <li>
-                        <a href="/post">Posts</a>
-                    </li>
-                     <li>
-                        <a href="/articles">Articles</a>
+                        <a href="/post.html">Sample Post</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="http://www.umapetersen.com">UP[CODE]</a>
+                        <a href="/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,34 +72,84 @@
         <!-- /.container -->
     </nav>
 
-  <!-- Page Header -->
+    <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-
-    <header class="intro-header" style="background-image: url('static/img/blog.png')">
+    <header class="intro-header" style="background-image: url('static/bootstrap/img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1 class="page-title">[CODE]UP....BLOG</h1>
+                        <h1>[CODE]UP. . .BLOG</h1>
                         <hr class="small">
-                        <span class="subheading">Code & Design</span>
+                        <span class="subheading">CODE & DESIGN</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Man must explore, and this is exploration at its greatest
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                        </h2>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Science has not yet mastered prophecy
+                        </h2>
+                        <h3 class="post-subtitle">
+                            We predict too much for the next year and yet far too little for the next ten.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Failure is not an option
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-{% block content %}
+    <hr>
 
-
-{% endblock %}
-
-   
-    
-
-        
-<!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -142,7 +180,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Uma Petersen  2015</p>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </div>
@@ -160,7 +198,3 @@
 </body>
 
 </html>
-
-
-
-

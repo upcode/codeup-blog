@@ -1,5 +1,5 @@
-title: Python
-subtitle:: Build Simple Flask App
+title: CSS3 Amination
+subtitle: Calivin and Hobbs
 name: by Uma Petersen
 date: 2015-12-7
 summary: Create a simple blog using Flask static pages, is a great way to timline what you have learned.
