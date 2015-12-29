@@ -17,25 +17,25 @@
                     </a>
                     <p class="post-meta">Posted by<a href="/about"> {{ post.name }}</a></p>
                     <p><span class="glyphicon glyphicon-time"></span>{{ post.date }}</p>
-                    <img class="img-responsive" src="/static/img/code.png" height="150" width="150" alt=""/>
-
+                    <!-- PLACE IMAGE HERE -->
+<!--  <img class="img-responsive" src="/static/img/code.png" height="100" width="450" alt=""/>
+ -->
                     <p class="post-description">{{ post.summary }}</p>
-                <a class="btn btn-primary" href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a id="post-button" class="btn btn-primary" href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
-                 {% endfor %}
+                {% endfor %}
                 </div>
-                <hr>
                 <!-- Pager -->
-                <ul class="pager">
+               <!--  <ul class="pager">
                     <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
+                        <a href="/posts-lists">Older Posts &rarr;</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
-    </div>
-        {% endblock %}
 
+    </div>
+{% endblock %}
 
 
 

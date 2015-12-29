@@ -17,8 +17,11 @@ color: black;
     padding-left: 500px;
     padding-right: 50px;
 }
+/*=== ABOUT  PAGE ===*/
 
-
+.text p {
+   font-size: 20px;
+}
 /*===CONTACT PAGE ===*/
 
 
@@ -33,7 +36,20 @@ color: black;
 .social-contact{
   padding-top: 50px;
 }
+/*===POST PAGE ===*/
+#post-button{
+  color: #2ca02c;
 
+}
+.btn-primary{
+  color: #2ca02c;
+
+}
+
+.btn {
+    color: #2ca02c;
+
+}
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
@@ -57,11 +73,11 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #404040;
+  color: #2ca02c;
 }
 a:hover,
 a:focus {
-  color: #404040;
+  color: #2ca02c;
 }
 a img:hover,
 a img:focus {

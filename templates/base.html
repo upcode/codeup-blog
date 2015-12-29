@@ -12,15 +12,15 @@
     <title>UPCODE BLOG</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="../static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
 
 
     <!-- Custom CSS -->
-    <link href="../static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
-    <link href="../static/css/base.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/clean-blog.min.css" rel="stylesheet">
+    <link href="/static/css/base.css" rel="stylesheet">
 
     
     <!-- Custom Fonts -->
@@ -60,13 +60,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/index">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/post">Posts</a>
                     </li>
                      <li>
                         <a href="/articles">Articles</a>
@@ -112,6 +109,8 @@
 
         
 <!-- Footer -->
+
+{% block footer %}
     <footer>
         <div class="container">
             <div class="row">
@@ -147,6 +146,8 @@
             </div>
         </div>
     </footer>
+    {% endblock %}
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
