@@ -1,6 +1,6 @@
 title: CSS3
 subtitle: Fild Flip-Card with CSS Animination
-name: by Uma Petersen
+name: UP[code]
 date: 2015-12-5
 summary: When learning to program, I find it helpful  to keep a journal—or better yet, build a blog. Building a blog, discussing what you have learned, helps solidify your own knowledge. I encourage you to create a blog either using Wordpress or another CSM.  But today I’ll show you how to create a blog using a Python Flask framework with static pages, pushing the blog to GitHub pages. It is a great way to timeline what you have learned.
 

@@ -1,6 +1,6 @@
 title: Javascript
 subtitle: Data Vizulation using D3.js
-name: by Uma Petersen
+name: UP[code]
 date: 2015-12-9
 summary: Create a simple blog using Flask static pages, is a great way to timline what you have learned.
 

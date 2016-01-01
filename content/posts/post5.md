@@ -1,6 +1,6 @@
 title: Python
 subtitle: Build Simple Flask App
-name: by Uma Petersen
+name: UP[code]
 date: 2015-12-7
 summary: Create a simple blog using Flask static pages, is a great way to timline what you have learned.
 

@@ -1,6 +1,6 @@
 title: HTML5
 subtitle: HTML Boilerplate
-name: by Uma Petersen
+name: UP[code]
 date: 2015-12-15
 summary: Create a simple blog using Flask static pages, is a great way to timline what you have learned.
 

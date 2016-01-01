@@ -1,6 +1,6 @@
 title: UP[code]
 subtitle: Organized Programmer Tips and Tricks
-name: Posted by - UP[code]
+name: UP[code]
 date: 2015-12-10
 summary: Learning to program has many challenges.  Staying organized when learning to program not only makes you more effective, but also helps to increase productivity. Although at times it is difficult to estimate how long a project will take, it is still important to keep files, programs, notes in sync. I have created few guidelines for myself to increase my own productivity and to ensure my projects are deployed in timely manner. Click the link for tips and tricks on becoming an organized programmer.
 

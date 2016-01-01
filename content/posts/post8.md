@@ -1,6 +1,6 @@
 title: Python
 subtitle: Project Ideas
-name: by Uma Petersen
+name: UP[code]
 date: 2015-12-30
 summary: Create a simple blog using Flask static pages, is a great way to timline what you have learned.
 

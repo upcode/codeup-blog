@@ -21,7 +21,7 @@
 <!--  <img class="img-responsive" src="/static/img/code.png" height="100" width="450" alt=""/>
  -->
                     <p class="post-description">{{ post.summary }}</p>
-                <a id="post-button" class="btn btn-primary" href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a id="post-button" class="btn btn-default" href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
                 {% endfor %}
                 </div>
