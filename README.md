@@ -1,10 +1,19 @@
-Created Blog using For years, I used and adored Wordpress as my go-to blogging platform. It was quick to install, easy to use, and had a ton of bloat functionality that I simply never used. Flask has been my framework of choice when starting a new web project for a while now, and I wanted a dead-simple solution for managing my mostly static site and handling my occasional writing. I had the following requirements:
-Must build into static site
-Posts composed in Markdown <3
-Ability to include code snippets
-Before we begin, I recommend having a quick read of the Flask Documentation to familiarise yourself with the basics of Flask.
-INGREDIENTS
-Let's start with our Python dependencies. We are using Flask 0.10.x and Python 2.7
+Python Flask Blog
+STACK: 
+Python 
+Flask 
+Jinja 
+Javascript 
+HTML 
+CSS 
+Heroku 
+Markdown
+
+Created Programming Blog using Flask framework. This is a static site using markdown for occasional writing. 
+Posts are composed in Markdown which includes ability for code snuppets. 
+
+Requirements:
+Python dependencies: 
 Flask==0.10.1
 Flask-FlatPages==0.5
 Frozen-Flask==0.11
@@ -16,9 +25,13 @@ Pygments==1.6
 Werkzeug==0.9.3
 itsdangerous==0.22
 wsgiref==0.1.2
-I will assume that you know a little about VirtualEnv. If not, you seriously should be using it for all of your Python projects. Drop the above list into a file named requirements.txt and execute pip install -r requirements.txt from your shell. You are now ready to start building your blog.
+
+After creating virutal env drop list above in to command line and 
+
+execute pip install -r requirements.txt from your shell. 
+
 FOLDER STRUCTURE
-We need to create folders to store our static markdown pages, in addition to our standard templates and static files folders.
+create folders to store static markdown pages. Should have 4 directories, 2 files
 ├── blog.py
 ├── content
 │   └── posts
@@ -26,10 +39,9 @@ We need to create folders to store our static markdown pages, in addition to our
 ├── static
 └── templates
 
-4 directories, 2 files
-Your stylesheets and javascript files will go in the static directory, and all of your posts will go in the… I think that you can probably guess which folder :)
+
 THE ROUTES FILE
-Flask makes it dead simple to declare a pretty URL scheme for your blog with the route wrapper functions. To begin, we need to make sure that we import all of the required packages. Create a new file named blog.py and open it up. It should look something like this...
+
 import sys
 from flask import Flask, render_template
 from flask_flatpages import FlatPages, pygments_style_defs
@@ -51,9 +63,12 @@ if __name__ == "__main__":
         freezer.freeze()
     else:
         app.run(host='0.0.0.0', debug=True)
-Great, we have the beginnings of our blog. Time to add some routes that will serve our blog posts. You can add your own routes for custom pages here too. We will define the posts route to find and list all of our posts, and post will create a page for each one. Let's add the following immediately before the if __name__ == "__main__" line.
+
+
+Before this line --> if __name__ == "__main__" add the following:
 @app.route("/posts/")
 def posts():
+    #iterate over the list and sort posts by date  
     posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
     posts.sort(key=lambda item:item['date'], reverse=False)
     return render_template('posts.html', posts=posts)
@@ -63,44 +78,33 @@ def post(name):
     path = '{}/{}'.format(POST_DIR, name)
     post = flatpages.get_or_404(path)
     return render_template('post.html', post=post)
-The first route will iterate over the list of posts, and pass this to the template which we will look at shortly. I chose to sort by date. 10 lines of code, and this covers all of the blog logic that we have to deal with.
+
+
 TEMPLATES
-Start by making a new template for the list of posts. I will give you a bare minimal snippet, beyond that it is up to you! We will name this file posts.html and place it in the templates directory:
+Create template for posts.html for list of posts --> here is minimal skelton of post templates
+
 {% for post in posts %}
     <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
         {{ post.title }}
     </a>
     <small>{{ post.date }}</small>
 {% endfor %}
+
+create template for post.html 
 And for post.html, drop the following into your template wherever you want them displayed!
 {{ post.html|safe }}
 {{ post.title }}
 {{ post.date }}
-Now you're cooking with a Flask!
-HOW ABOUT THE POSTS
-Oh yeah, this is the easy part. If you are on Mac, I would recommend Mou as your editor, and for those on Windows MarkdownPad comes highly commended. You will store your markdown files in the content/posts/ directory as some_file_name.md, and include a small amount of metadata in each file.
-title: Should it be YYYY-MM-DD or YYYY-DD-MM? My Thoughts
+
+NEXT: creating Markdown for posts
+POSTS
+store your markdown files in the content/posts/ directory as some_file_name.md, and include a small amount of metadata in each file.
+title: Should it be YYYY-MM-DD or YYYY-DD-MM
 date: 2013-08-27
 
-American-style dates, I know, I know. Here you can write markdown code, including *italics* and **bold**
-
-You can have:
-* Lists
-* More Lists
-
-> And block quotes
-
-    And event highlighted code if you indent :)
-LETS BUILD THIS THING
+DEPLOY / SHIP IT
 If you want to run this server to test on your local machine, you can simply run the script using python blog.py.
-When you are happy and want to generate the static site, use python blog.py build and a new build directory will be created with your new static blog.
+ or you can deply to heroku or github pages
 
-STACK: 
-Python 
-Flask 
-Jinja 
-Javascript 
-HTML 
-CSS 
-Heroku 
-Markdown
+
+
