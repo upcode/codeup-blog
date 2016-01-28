@@ -98,7 +98,7 @@ And for post.html, drop the following into your template wherever you want them 
 {{ post.title }}
 {{ post.date }}<p>
 
-<h1>NEXT: creating Markdown for posts<h1>
+<h1>NEXT: creating Markdown for posts</h1>
 POSTS
 store your markdown files in the content/posts/ directory as some_file_name.md, and include a small amount of metadata in each file.
 title: Should it be YYYY-MM-DD or YYYY-DD-MM
