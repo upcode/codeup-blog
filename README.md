@@ -1,4 +1,4 @@
-<h1>Python Flask Blog<h1>
+<h1>Python Flask Blog</h1>
 <lable> TECH STACK:</label>
 <ul>
 <li>Python</li> 
@@ -83,14 +83,14 @@ def post(name):
 
 
 <h1>TEMPLATES</h1>
-<p>Create template for posts.html for list of posts --> here is minimal skelton of post templates<p>
+<p>Create template for posts.html for list of posts --> here is minimal skelton of post templates</p>
 
-{% for post in posts %}
+<p>{% for post in posts %}
     <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
         {{ post.title }}
     </a>
     <small>{{ post.date }}</small>
-{% endfor %}
+{% endfor %}</p>
 
 <p>create template for post.html 
 And for post.html, drop the following into your template wherever you want them displayed!
@@ -102,7 +102,7 @@ And for post.html, drop the following into your template wherever you want them 
 POSTS
 store your markdown files in the content/posts/ directory as some_file_name.md, and include a small amount of metadata in each file.
 title: Should it be YYYY-MM-DD or YYYY-DD-MM
-date: 2013-08-27<p>
+date: 2013-08-27</p>
 
 <h1>DEPLOY / SHIP IT</h1>
 <p>If you want to run this server to test on your local machine, you can simply run the script using python blog.py.
